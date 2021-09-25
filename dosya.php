@@ -6,7 +6,7 @@
             // dosya oluşturma ve içine veri yazma
             $sonuc = file_exists('testfile.php'); // dosya kontrolü
             if ( !$sonuc){
-                $dt = fopen('testfile.php', 'w'); // dosya olusturma
+                $dt = fopen('testfile.php', 'w'); // dosya oluşturma
                 $file = file_get_contents('xnprt.php', FILE_USE_INCLUDE_PATH); // dosya içine xxx.php deki verileri yazma
                 fwrite($dt, $file);
                 fclose($dt);
@@ -17,7 +17,7 @@
 
             $sonuc = file_exists('testfile.php'); // dosya kontrolü
             if ( $sonuc) {
-                unlink("testfile.php"); // dosua silme
+                unlink("testfile.php"); // dosya silme
                 echo "!! işlem tamam";
             }
 
