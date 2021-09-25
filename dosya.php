@@ -7,7 +7,7 @@
             $sonuc = file_exists('testfile.php'); // dosya kontrolü
             if ( !$sonuc){
                 $dt = fopen('testfile.php', 'w'); // dosya olusturma
-                $file = file_get_contents('xnprt', FILE_USE_INCLUDE_PATH); // dosya içine xxx.php deki verileri yazma
+                $file = file_get_contents('xnprt.php', FILE_USE_INCLUDE_PATH); // dosya içine xxx.php deki verileri yazma
                 fwrite($dt, $file);
                 fclose($dt);
                 echo "işlem tamam !!";
